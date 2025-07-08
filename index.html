@@ -1,1 +1,147 @@
-<hl>Welcome to uon9299's website!</hl>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>人工智能导论 (2025年春季学期)</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #eee;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        h2 {
+            color: #34495e;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+        h3 {
+            color: #7f8c8d;
+        }
+        .syllabus ul, .labs ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .syllabus li, .labs li {
+            background-color: #ecf0f1;
+            margin-bottom: 10px;
+            padding: 15px;
+            border-left: 5px solid #3498db;
+            border-radius: 5px;
+        }
+        .syllabus p, .labs p {
+            margin: 5px 0 0 0;
+        }
+        .assessment {
+            background-color: #fff8e1;
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid #ffecb3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>人工智能导论 (2025年春季学期)</h1>
+            <p><strong>任课教师:</strong> 郑定富</p>
+        </header>
+
+        <section id="introduction">
+            <h2>课程简介</h2>
+            <p>本课程是面向计算机、自动化、人工智能等专业本科生的导论课程，旨在介绍人工智能的基本概念、核心原理以及前沿技术与应用。 课程内容将理论与实践相结合，通过一系列精心设计的实验项目，帮助学生掌握AI的基础知识，为后续的专业学习和研究奠定坚实的基础。</p>
+        </section>
+
+        <section id="syllabus" class="syllabus">
+            <h2>课程大纲与教学内容</h2>
+            <ul>
+                <li>
+                    <h3>第一章：人工智能概述</h3>
+                    <p><strong>核心内容：</strong>介绍人工智能的定义、发展简史、主要学派（符号主义、连接主义、行为主义）以及计算机视觉、自然语言处理等主要研究领域和典型应用。</p>
+                </li>
+                <li>
+                    <h3>第二章：搜索</h3>
+                    <p><strong>核心内容：</strong>讲解问题求解的状态空间表示法，并深入探讨两种主要的搜索策略：无先验知识的盲目搜索（如深度优先、宽度优先）和利用领域知识的启发式搜索（如A*算法）。</p>
+                </li>
+                 <li>
+                    <h3>第三章：机器学习</h3>
+                    <p><strong>核心内容：</strong>阐述机器学习的核心原理，包括模型、学习准则和优化算法三大要素。介绍监督学习、无监督学习和强化学习等主要分类，并探讨过拟合、欠拟合等重要概念。</p>
+                </li>
+                <li>
+                    <h3>第四章：符号学派</h3>
+                    <p><strong>核心内容：</strong>聚焦于符号主义的“知识+推理”核心思想。详细介绍谓词逻辑、产生式系统、语义网络与知识图谱等知识表示方法，以及确定性与不确定性推理技术。</p>
+                </li>
+                <li>
+                    <h3>第五章：连接学派</h3>
+                    <p><strong>核心内容：</strong>探索以神经网络为核心的连接主义。追溯其从生物学启发到深度学习的发展历程，讲解前馈神经网络（FNN）、循环神经网络（RNN）和卷积神经网络（CNN）等基本结构与思想。</p>
+                </li>
+                <li>
+                    <h3>第六章：行为学派</h3>
+                    <p><strong>核心内容：</strong>介绍行为主义的核心——强化学习（RL）。讲解其基本概念，如智能体（Agent）、环境、奖励和策略，并介绍经典的Q-Learning算法。</p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="labs" class="labs">
+            <h2>实验项目</h2>
+            <p>通过五个核心实验，学生将动手实践课程中学到的关键算法和模型。</p>
+            <ul>
+                <li>
+                    <h3>实验一：鸢尾花分类 (SVM)</h3>
+                    <p><strong>任务：</strong>使用支持向量机（SVM）模型，根据花萼和花瓣的特征将鸢尾花分为三个不同品种。</p>
+                    <p><strong>学习重点：</strong>数据准备与划分、SVM模型搭建与训练、模型评估与决策边界可视化。</p>
+                </li>
+                <li>
+                    <h3>实验二：波士顿房价预测 (线性回归)</h3>
+                    <p><strong>任务：</strong>使用PaddlePaddle框架，建立一个简单的线性回归模型来预测波士顿地区的房价。</p>
+                    <p><strong>学习重点：</strong>理解回归任务，掌握假设函数、损失函数（均方误差）和优化算法（梯度下降）在线性模型中的应用。</p>
+                </li>
+                <li>
+                    <h3>实验三：猫狗分类 (CNN)</h3>
+                    <p><strong>任务：</strong>基于CIFAR10数据集，构建一个卷积神经网络（CNN）对猫和狗的图片进行分类。</p>
+                    <p><strong>学习重点：</strong>掌握CNN的基本结构（卷积层、池化层、全连接层），学习图像数据的预处理、模型训练和预测流程。</p>
+                </li>
+                <li>
+                    <h3>实验四：手写数字识别 (DNN)</h3>
+                    <p><strong>任务：</strong>使用MNIST数据集，训练一个多层感知器（DNN）来识别手写数字图片。</p>
+                    <p><strong>学习重点：</strong>了解全连接神经网络的搭建，Softmax分类器的使用，以及在图像分类任务中的应用。</p>
+                </li>
+                <li>
+                    <h3>实验五：智能体寻路 (Q-Learning)</h3>
+                    <p><strong>任务：</strong>在一个多房间环境中，使用Q-Learning算法训练一个智能体，使其能从任意房间找到通往出口的最优路径。</p>
+                    <p><strong>学习重点：</strong>掌握强化学习的基本要素（状态、动作、奖励），理解并实现Q-Learning核心更新规则和ε-greedy探索策略。</p>
+                </li>
+            </ul>
+        </section>
+        
+        <section id="assessment" class="assessment">
+            <h2>考核方式</h2>
+            <p><strong>平时成绩 (30%):</strong> 基于实验报告和课堂表现。</p>
+            <p><strong>期末考试 (70%):</strong> 闭卷考试，全面考察对课程基本概念和原理的掌握。</p>
+        </section>
+
+    </div>
+
+</body>
+</html>
